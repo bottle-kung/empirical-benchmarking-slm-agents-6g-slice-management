@@ -1,0 +1,182 @@
+[
+  {
+    "model": "qwen2.5:1.5b",
+    "intent_id": "PROV-001",
+    "domain": "Provisioning",
+    "wall_time_s": 0.3,
+    "duration_s": 0.0,
+    "tokens": 0,
+    "speed_tok_s": 0,
+    "response": "",
+    "parsed": null,
+    "ground_truth": {
+      "action": "CREATE",
+      "slice_type": "eMBB",
+      "bandwidth_gbps": 1
+    },
+    "match_pct": 0,
+    "action_correct": false,
+    "format_valid": false
+  },
+  {
+    "model": "qwen2.5:1.5b",
+    "intent_id": "SCAL-026",
+    "domain": "Scaling",
+    "wall_time_s": 0.3,
+    "duration_s": 0.0,
+    "tokens": 0,
+    "speed_tok_s": 0,
+    "response": "",
+    "parsed": null,
+    "ground_truth": {
+      "action": "SCALE",
+      "target": "bandwidth",
+      "strategy": "gradual",
+      "step_percent": 20,
+      "duration_hours": 4
+    },
+    "match_pct": 0,
+    "action_correct": false,
+    "format_valid": false
+  },
+  {
+    "model": "qwen2.5:1.5b",
+    "intent_id": "CONF-023",
+    "domain": "Conflict",
+    "wall_time_s": 0.3,
+    "duration_s": 0.0,
+    "tokens": 0,
+    "speed_tok_s": 0,
+    "response": "",
+    "parsed": null,
+    "ground_truth": {
+      "action": "RESOLVE",
+      "priority": "emergency_responders",
+      "preempt": "regular_users",
+      "slice_type": "URLLC"
+    },
+    "match_pct": 0,
+    "action_correct": false,
+    "format_valid": false
+  },
+  {
+    "model": "llama3.2:3b",
+    "intent_id": "PROV-001",
+    "domain": "Provisioning",
+    "wall_time_s": 0.3,
+    "duration_s": 0.0,
+    "tokens": 0,
+    "speed_tok_s": 0,
+    "response": "",
+    "parsed": null,
+    "ground_truth": {
+      "action": "CREATE",
+      "slice_type": "eMBB",
+      "bandwidth_gbps": 1
+    },
+    "match_pct": 0,
+    "action_correct": false,
+    "format_valid": false
+  },
+  {
+    "model": "llama3.2:3b",
+    "intent_id": "SCAL-026",
+    "domain": "Scaling",
+    "wall_time_s": 0.3,
+    "duration_s": 0.0,
+    "tokens": 0,
+    "speed_tok_s": 0,
+    "response": "",
+    "parsed": null,
+    "ground_truth": {
+      "action": "SCALE",
+      "target": "bandwidth",
+      "strategy": "gradual",
+      "step_percent": 20,
+      "duration_hours": 4
+    },
+    "match_pct": 0,
+    "action_correct": false,
+    "format_valid": false
+  },
+  {
+    "model": "llama3.2:3b",
+    "intent_id": "CONF-023",
+    "domain": "Conflict",
+    "wall_time_s": 0.3,
+    "duration_s": 0.0,
+    "tokens": 0,
+    "speed_tok_s": 0,
+    "response": "",
+    "parsed": null,
+    "ground_truth": {
+      "action": "RESOLVE",
+      "priority": "emergency_responders",
+      "preempt": "regular_users",
+      "slice_type": "URLLC"
+    },
+    "match_pct": 0,
+    "action_correct": false,
+    "format_valid": false
+  },
+  {
+    "model": "qwen2.5:7b",
+    "intent_id": "PROV-001",
+    "domain": "Provisioning",
+    "wall_time_s": 0.3,
+    "duration_s": 0.0,
+    "tokens": 0,
+    "speed_tok_s": 0,
+    "response": "",
+    "parsed": null,
+    "ground_truth": {
+      "action": "CREATE",
+      "slice_type": "eMBB",
+      "bandwidth_gbps": 1
+    },
+    "match_pct": 0,
+    "action_correct": false,
+    "format_valid": false
+  },
+  {
+    "model": "qwen2.5:7b",
+    "intent_id": "SCAL-026",
+    "domain": "Scaling",
+    "wall_time_s": 0.3,
+    "duration_s": 0.0,
+    "tokens": 0,
+    "speed_tok_s": 0,
+    "response": "",
+    "parsed": null,
+    "ground_truth": {
+      "action": "SCALE",
+      "target": "bandwidth",
+      "strategy": "gradual",
+      "step_percent": 20,
+      "duration_hours": 4
+    },
+    "match_pct": 0,
+    "action_correct": false,
+    "format_valid": false
+  },
+  {
+    "model": "qwen2.5:7b",
+    "intent_id": "CONF-023",
+    "domain": "Conflict",
+    "wall_time_s": 0.3,
+    "duration_s": 0.0,
+    "tokens": 0,
+    "speed_tok_s": 0,
+    "response": "",
+    "parsed": null,
+    "ground_truth": {
+      "action": "RESOLVE",
+      "priority": "emergency_responders",
+      "preempt": "regular_users",
+      "slice_type": "URLLC"
+    },
+    "match_pct": 0,
+    "action_correct": false,
+    "format_valid": false
+  }
+]

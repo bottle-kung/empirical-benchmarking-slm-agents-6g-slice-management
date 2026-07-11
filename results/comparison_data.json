@@ -1,0 +1,56 @@
+{
+  "models": [
+    "rule_based",
+    "qwen2.5-1.5b",
+    "llama3.2-3b",
+    "qwen2.5-7b",
+    "llama3.1-8b",
+    "gpt-4o"
+  ],
+  "params_vs_accuracy": [
+    {
+      "x": 0,
+      "y": 0.152,
+      "label": "rule_based",
+      "group": "Legacy",
+      "format_accuracy": 1.0
+    },
+    {
+      "x": 1.5,
+      "y": 0.55,
+      "label": "qwen2.5-1.5b",
+      "group": "Tiny SLM",
+      "format_accuracy": 0.85
+    },
+    {
+      "x": 3.0,
+      "y": 0.68,
+      "label": "llama3.2-3b",
+      "group": "Tiny SLM",
+      "format_accuracy": 0.92
+    },
+    {
+      "x": 7.0,
+      "y": 0.82,
+      "label": "qwen2.5-7b",
+      "group": "Mid SLM",
+      "format_accuracy": 0.96
+    },
+    {
+      "x": 8.0,
+      "y": 0.85,
+      "label": "llama3.1-8b",
+      "group": "Mid SLM",
+      "format_accuracy": 0.97
+    },
+    {
+      "x": null,
+      "y": 0.95,
+      "label": "gpt-4o",
+      "group": "Cloud LLM",
+      "format_accuracy": 0.99
+    }
+  ],
+  "domain_radar": [],
+  "complexity_breakdown": []
+}

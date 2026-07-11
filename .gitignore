@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Venv
+venv/
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+
+# Temp
+/tmp/
+*.log
+*.swp
+
+# Results (large files — keep local)
+results/*.csv
+results/pipeline_*.csv
+
+# Paper outputs
+paper/*.pdf
+paper/*.aux
+paper/*.log
+paper/*.out

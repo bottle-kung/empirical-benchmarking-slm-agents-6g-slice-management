@@ -1,0 +1,89 @@
+# Evaluation Framework Schema for SLM Agent Benchmark
+# Intent-Driven Slice Lifecycle Management in 6G Core
+
+dataset:
+  format: jsonl
+  encoding: UTF-8
+  total_target: 200
+
+columns:
+  - name: intent_id
+    type: string
+    description: รหัสอ้างอิงของแต่ละคำสั่ง (e.g., PROV-001, SCAL-001, CONF-001)
+    pattern: "{DOMAIN}-{SEQ:03d}"
+    
+  - name: domain
+    type: enum
+    values:
+      - Slicing Provisioning
+      - Scaling Request
+      - Conflict Resolution
+    description: หมวดหมู่การจัดการระบบ
+    
+  - name: complexity
+    type: enum
+    values:
+      - Simple
+      - Complex
+      - Ambiguous
+    description: ระดับความซับซ้อนของ Intent
+    
+  - name: input_text
+    type: string
+    description: ประโยคคำสั่งภาษาธรรมชาติ (ภาษาอังกฤษ)
+    
+  - name: ground_truth
+    type: object
+    description: โครงสร้าง JSON ที่ถูกต้อง (เฉลย)
+    required_keys:
+      - action
+    optional_keys:
+      - slice_type
+      - target
+      - replicas
+      - bandwidth_gbps
+      - latency_ms
+      - priority
+      - preempt
+      - strategy
+      - step_percent
+      - duration_hours
+      - slice_id
+      - optimize
+      - terminate_slice
+      - prioritize_slice
+      - device_density
+
+# Distribution targets (approx.)
+distribution:
+  Slicing Provisioning:
+    Simple: 25
+    Complex: 22
+    Ambiguous: 23
+    total: 70
+  Scaling Request:
+    Simple: 25
+    Complex: 23
+    Ambiguous: 22
+    total: 70
+  Conflict Resolution:
+    Simple: 20
+    Complex: 20
+    Ambiguous: 20
+    total: 60
+
+# Ground truth action types
+actions:
+  Slicing Provisioning:
+    - CREATE
+    - CONFIGURE
+  Scaling Request:
+    - SCALE
+    - SCALE_UP
+    - SCALE_DOWN
+    - OPTIMIZE
+  Conflict Resolution:
+    - RESOLVE
+    - PREEMPT
+    - TERMINATE
+    - REALLOCATE

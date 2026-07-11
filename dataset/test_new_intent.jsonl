@@ -1,0 +1,1 @@
+{"intent_id": "TEST-001", "domain": "Slicing Provisioning", "complexity": "Simple", "input_text": "Create a new eMBB slice for a 4K video streaming event in Bangkok.\nTechnical requirements:\n- Bandwidth: 1 Gbps\n- Latency: < 10ms\n- Location: Bangkok", "ground_truth": {"action": "CREATE", "slice_type": "eMBB", "bandwidth_gbps": 1}}

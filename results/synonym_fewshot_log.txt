@@ -1,0 +1,91 @@
+📦 200 intents loaded
+🤖 Model: qwen2.5:1.5b
+📅 Started: 09:36:54 11/07/2026
+======================================================================
+
+🔵 RUN 1/2: BASELINE Prompt (200 intents)
+──────────────────────────────────────────────────────────────────────
+  [ 20/200] Action: 17/20 (85.0%)
+  [ 40/200] Action: 32/40 (80.0%)
+  [ 60/200] Action: 47/60 (78.3%)
+  [ 80/200] Action: 58/80 (72.5%)
+  [100/200] Action: 64/100 (64.0%)
+  [120/200] Action: 74/120 (61.7%)
+  [140/200] Action: 79/140 (56.4%)
+  [160/200] Action: 83/160 (51.9%)
+  [180/200] Action: 87/180 (48.3%)
+  [200/200] Action: 87/200 (43.5%)
+
+  ✅ Baseline run complete: 200 responses
+
+🟢 RUN 2/2: FEW-SHOT Prompt (200 intents)
+──────────────────────────────────────────────────────────────────────
+  [ 20/200] Action: 20/20 (100.0%)
+  [ 40/200] Action: 40/40 (100.0%)
+  [ 60/200] Action: 57/60 (95.0%)
+  [ 80/200] Action: 70/80 (87.5%)
+  [100/200] Action: 76/100 (76.0%)
+  [120/200] Action: 86/120 (71.7%)
+  [140/200] Action: 87/140 (62.1%)
+  [160/200] Action: 92/160 (57.5%)
+  [180/200] Action: 96/180 (53.3%)
+  [200/200] Action: 96/200 (48.0%)
+
+  ✅ Few-Shot run complete: 200 responses
+
+🔄 Applying Synonym Mapper post-processing...
+──────────────────────────────────────────────────────────────────────
+
+======================================================================
+  📊 RESULTS SUMMARY — Synonym Mapper + Few-Shot Experiment
+======================================================================
+
+  📌 Baseline
+     Format: 196/200 (98.0%)
+     Action: 87/200 (43.5%)
+     Avg Match: 26.0%
+     Avg Time: 4.1s
+
+  📌 Baseline + Synonym
+     Format: 196/200 (98.0%)
+     Action: 100/200 (50.0%)
+     Avg Match: 27.9%
+     Avg Time: 4.1s
+
+  📌 Few-Shot
+     Format: 200/200 (100.0%)
+     Action: 96/200 (48.0%)
+     Avg Match: 25.1%
+     Avg Time: 4.0s
+
+  📌 Few-Shot + Synonym
+     Format: 200/200 (100.0%)
+     Action: 96/200 (48.0%)
+     Avg Match: 25.1%
+     Avg Time: 4.0s
+
+──────────────────────────────────────────────────────────────────────
+  📊 By Domain Breakdown
+──────────────────────────────────────────────────────────────────────
+
+  Condition                    Provisioning          Scaling         Conflict
+  ──────────────────────── ──────────────── ──────────────── ────────────────
+  Baseline                   44.1% (55/70)   25.8% (24/70)    5.1% ( 8/60)
+  Baseline + Synonym         49.5% (67/70)   25.8% (25/70)    5.1% ( 8/60)
+  Few-Shot                   44.5% (67/70)   22.7% (20/70)    5.4% ( 9/60)
+  Few-Shot + Synonym         44.5% (67/70)   22.7% (20/70)    5.4% ( 9/60)
+
+──────────────────────────────────────────────────────────────────────
+  📈 IMPROVEMENT ANALYSIS (vs Baseline)
+──────────────────────────────────────────────────────────────────────
+  Baseline + Synonym       Action: ++6.5% | Match: ++1.9%
+  Few-Shot                 Action: ++4.5% | Match: +-0.9%
+  Few-Shot + Synonym       Action: ++4.5% | Match: +-0.9%
+
+  🔧 Synonym Mapper fixed 13/113 previously-failed intents
+     (11.5% of baseline errors resolved by vocabulary mapping alone)
+
+======================================================================
+💾 Saved: /jupyter_workspace/local/ai_agent/slm_6g_eval/results/synonym_fewshot_results.json
+📅 Finished: 10:05:16 11/07/2026
+⏱️  Total wall time: ~14 min × 2 runs
