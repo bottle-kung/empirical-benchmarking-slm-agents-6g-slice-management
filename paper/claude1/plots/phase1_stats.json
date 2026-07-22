@@ -1,0 +1,210 @@
+{
+  "phase1": {
+    "Qwen": {
+      "model": "qwen2.5:7b",
+      "format": 100.0,
+      "action": 43.5,
+      "exact": 29.8,
+      "exact_ci95": 3.9803890477854864,
+      "time_s": 18.68,
+      "tps": 2.2,
+      "avg_tokens": 41.6,
+      "total_time_min": 62.266666666666666,
+      "by_domain": {
+        "Slicing Provisioning": {
+          "n": 70,
+          "action": 100.0,
+          "exact": 55.097142857142856
+        },
+        "Scaling Request": {
+          "n": 70,
+          "action": 18.571428571428573,
+          "exact": 24.63
+        },
+        "Conflict Resolution": {
+          "n": 60,
+          "action": 6.666666666666667,
+          "exact": 6.248333333333333
+        }
+      },
+      "by_complexity": {
+        "Simple": {
+          "n": 70,
+          "exact": 46.40857142857143,
+          "action": 48.57142857142857
+        },
+        "Ambiguous": {
+          "n": 65,
+          "exact": 20.79230769230769,
+          "action": 36.92307692307692
+        },
+        "Complex": {
+          "n": 65,
+          "exact": 20.856923076923078,
+          "action": 44.61538461538461
+        }
+      }
+    },
+    "Gemma": {
+      "model": "gemma2:9b-q4_K_M",
+      "format": 98.5,
+      "action": 45.5,
+      "exact": 29.3,
+      "exact_ci95": 4.043539029997555,
+      "time_s": 39.79,
+      "tps": 1.0,
+      "avg_tokens": 40.1,
+      "total_time_min": 132.63333333333333,
+      "by_domain": {
+        "Slicing Provisioning": {
+          "n": 70,
+          "action": 97.14285714285714,
+          "exact": 54.71714285714286
+        },
+        "Scaling Request": {
+          "n": 70,
+          "action": 25.714285714285715,
+          "exact": 24.542857142857144
+        },
+        "Conflict Resolution": {
+          "n": 60,
+          "action": 8.333333333333334,
+          "exact": 5.081666666666666
+        }
+      },
+      "by_complexity": {
+        "Simple": {
+          "n": 70,
+          "exact": 45.31285714285714,
+          "action": 47.142857142857146
+        },
+        "Ambiguous": {
+          "n": 65,
+          "exact": 21.306153846153848,
+          "action": 38.46153846153846
+        },
+        "Complex": {
+          "n": 65,
+          "exact": 19.943076923076923,
+          "action": 50.76923076923077
+        }
+      }
+    },
+    "Llama": {
+      "model": "llama3.1:8b",
+      "format": 100.0,
+      "action": 36.5,
+      "exact": 26.0,
+      "exact_ci95": 3.8387060450128354,
+      "time_s": 19.11,
+      "tps": 2.2,
+      "avg_tokens": 42.3,
+      "total_time_min": 63.7,
+      "by_domain": {
+        "Slicing Provisioning": {
+          "n": 70,
+          "action": 87.14285714285714,
+          "exact": 49.93
+        },
+        "Scaling Request": {
+          "n": 70,
+          "action": 11.428571428571429,
+          "exact": 20.445714285714285
+        },
+        "Conflict Resolution": {
+          "n": 60,
+          "action": 6.666666666666667,
+          "exact": 4.526666666666666
+        }
+      },
+      "by_complexity": {
+        "Simple": {
+          "n": 70,
+          "exact": 40.33428571428571,
+          "action": 35.714285714285715
+        },
+        "Ambiguous": {
+          "n": 65,
+          "exact": 19.024615384615384,
+          "action": 35.38461538461539
+        },
+        "Complex": {
+          "n": 65,
+          "exact": 17.506153846153847,
+          "action": 38.46153846153846
+        }
+      }
+    },
+    "GLM": {
+      "model": "glm4:9b-q4_K_M",
+      "format": 100.0,
+      "action": 29.0,
+      "exact": 24.6,
+      "exact_ci95": 3.647102885754444,
+      "time_s": 22.88,
+      "tps": 1.8,
+      "avg_tokens": 40.6,
+      "total_time_min": 76.26666666666667,
+      "by_domain": {
+        "Slicing Provisioning": {
+          "n": 70,
+          "action": 54.285714285714285,
+          "exact": 41.69
+        },
+        "Scaling Request": {
+          "n": 70,
+          "action": 21.428571428571427,
+          "exact": 24.315714285714286
+        },
+        "Conflict Resolution": {
+          "n": 60,
+          "action": 8.333333333333334,
+          "exact": 4.998333333333333
+        }
+      },
+      "by_complexity": {
+        "Simple": {
+          "n": 70,
+          "exact": 40.47571428571428,
+          "action": 31.428571428571427
+        },
+        "Ambiguous": {
+          "n": 65,
+          "exact": 15.86923076923077,
+          "action": 27.692307692307693
+        },
+        "Complex": {
+          "n": 65,
+          "exact": 16.23846153846154,
+          "action": 27.692307692307693
+        }
+      }
+    }
+  },
+  "qwen_scaling_q4": {
+    "0.5B": [
+      18.51,
+      25.02,
+      15.0,
+      22.02
+    ],
+    "1.5B": [
+      25.78,
+      27.83,
+      21.88,
+      29.69
+    ],
+    "3B": [
+      27.26,
+      29.18,
+      23.16,
+      31.35
+    ],
+    "7B": [
+      29.85,
+      28.85,
+      25.8,
+      33.9
+    ]
+  }
+}
